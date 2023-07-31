@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if(locals.id) { %>
+    <p>Url Generated : <%= id %></p>  
+    <% } %>
+
+    <h1>Hey People..</h1>
+    <form method="POST" action="/url">
+        <label for="">Enter Your Original URL</label>
+        <input type="text" name="originalUrl" placeholder="http://example.com"/>
+    </form>
+</body>
+</html>
